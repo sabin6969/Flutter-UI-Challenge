@@ -22,26 +22,31 @@ class SettingPage extends StatelessWidget {
                 subtitle: Text("Nepal"),
               ),
               ListTile(
+                onTap: () {},
                 title: Text("Languages"),
                 subtitle: Text("English Us"),
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
               ListTile(
+                onTap: () {},
                 title: Text("Profile Settings"),
                 subtitle: Text("Jane Doe"),
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
               ListTile(
+                onTap: () {},
                 title: Text("Email Notifaction"),
                 subtitle: Text("On"),
                 trailing: Switch(value: true, onChanged: (value) {}),
               ),
               ListTile(
+                onTap: () {},
                 title: Text("Push Notification"),
                 subtitle: Text("On"),
                 trailing: Switch(value: false, onChanged: (value) {}),
               ),
               ListTile(
+                onTap: () {},
                 title: Text("Logout"),
               )
             ],
