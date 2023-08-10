@@ -94,7 +94,7 @@ class MyHome extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.only(top: 20, left: 10),
-                height: size.height * 0.38,
+                height: size.height * 0.42,
                 width: size.width,
                 child: Column(
                   children: [
@@ -110,52 +110,114 @@ class MyHome extends StatelessWidget {
                       height: 20,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         CustomCircleAvatar(
                           icon: Icon(
                             Icons.list_sharp,
-                            size: 40,
+                            size: 35,
                           ),
                         ),
                         CustomCircleAvatar(
                           icon: Icon(
                             Icons.message,
-                            size: 40,
+                            size: 35,
                           ),
                         ),
                         CustomCircleAvatar(
                             icon: Icon(
                           Icons.book,
-                          size: 40,
+                          size: 35,
                         ))
                       ],
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      // mainAxisAlignment: MainAxisAlignment.cen,
                       children: [
-                        Spacer(),
-                        Text(
-                          "Results",
-                          style: TextStyle(fontSize: 20),
+                        Spacer(
+                          flex: 2,
                         ),
-                        Spacer(),
+                        Text(
+                          "List",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        Spacer(
+                          flex: 2,
+                        ),
                         Text(
                           "Message",
-                          style: TextStyle(fontSize: 20),
-                        ),
-                        Text(
-                          "Appointments",
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                         Spacer(),
+                        Text(
+                          "Calender",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        Spacer(
+                          flex: 1,
+                        )
                       ],
-                    )
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.red,
+                          radius: 30,
+                          child: Icon(
+                            Icons.video_call,
+                            size: 35,
+                          ),
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.red,
+                          radius: 30,
+                          child: Icon(
+                            Icons.summarize,
+                            size: 35,
+                          ),
+                        ),
+                        CircleAvatar(
+                          backgroundColor: Colors.red,
+                          radius: 30,
+                          child: Icon(
+                            Icons.currency_bitcoin,
+                            size: 35,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text(
+                          "  Video",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Summary",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Billing",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade300,
-                ),
+                    color: Colors.grey.shade300,
+                    borderRadius: BorderRadius.circular(20)),
               )
             ],
           ),
